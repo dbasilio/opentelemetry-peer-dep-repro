@@ -19,10 +19,12 @@ The yarn install output produces:
 ➤ YN0000: Failed with errors in 0s 68ms
 ```
 
-This is because `@opentelemetry/auto-instrumentations-web` depends on `@opentelemetry/instrumentation-user-interaction` which declares a mandatory peerDependency which `@opentelemetry/auto-instrumentations-web` doesn't provide.
+## Explanation
+This error happens because `@opentelemetry/auto-instrumentations-web` depends on `@opentelemetry/instrumentation-user-interaction` which declares a mandatory peerDependency on `zone.js` which `@opentelemetry/auto-instrumentations-web` doesn't provide.
 
 All peerDependencies of a package must be resolved by any package that depends on it.
 
+## Possible Solutions
 There's a few ways to solve this problem:
 - add `zone.js` as a `peerDependency` on `@opentelemetry/auto-instrumentations-web`
 - add `zone.js` as a `dependency` on `@opentelemetry/auto-instrumentations-web`
