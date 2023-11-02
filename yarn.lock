@@ -265,7 +265,7 @@ __metadata:
   dependencies:
     "@opentelemetry/api": ^1.6.0
     "@opentelemetry/auto-instrumentations-web": ^0.33.2
-    zone.js: 0.11.2
+    zone.js: 0.11.4
   languageName: unknown
   linkType: soft
 
@@ -352,11 +352,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"zone.js@npm:0.11.2":
-  version: 0.11.2
-  resolution: "zone.js@npm:0.11.2"
+"zone.js@npm:0.11.4":
+  version: 0.11.4
+  resolution: "zone.js@npm:0.11.4"
   dependencies:
     tslib: ^2.0.0
-  checksum: a98d1cd8e940c0529856b7e8b790f9c1f4fc7e77047d3234027c9acfb95e7b4c073c381426016ad26ded3e4c834a76d65a6c7ea95f3659f972b06bcd615952c7
+  checksum: 20c3e39898019de4747a434a29ed528e5d730a674570c3e72775a57f9d57dba812e70d67c3932ff54e95db9b778f06a9b18119c5184dfd9552d3622544a6729f
   languageName: node
   linkType: hard
